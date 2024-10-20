@@ -1,6 +1,6 @@
 # Casa de Eventos
 
-Este é um **fork** do projeto [roofranklin/casa-de-eventos-react](https://github.com/roofranklin/casa-de-eventos-react), que implementa a contêinerização,  referente ao projeto final do módulo de **Contêinerização** do curso de DevOps da Ada Tech
+Este é um **fork** do repositório [roofranklin/casa-de-eventos-react](https://github.com/roofranklin/casa-de-eventos-react), que foi contêinerizado. Esta implementação refere-se ao projeto final do módulo de **Contêinerização** do curso de DevOps da Ada Tech.
 
 
 ## Instalação
