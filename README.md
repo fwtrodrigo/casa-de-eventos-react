@@ -1,77 +1,39 @@
-# Sistema de casa de eventos turma 1025
+# Casa de Eventos
 
-![Print da Homepage](https://i.ibb.co/0BLwdMW/Screenshot-2024-02-19-at-16-30-28.png)
+Este é um **fork** do projeto [roofranklin/casa-de-eventos-react](https://github.com/roofranklin/casa-de-eventos-react), que implementa a contêinerização,  referente ao projeto final do módulo de **Contêinerização** do curso de DevOps da Ada Tech
 
-## Tecnologias Utilizadas
 
-- React
-- Vite
-- Node v20.5.1
+## Instalação
 
-## Dependências Utilizadas
+### Via Repositório do GitHub
 
-- React Router
-- Styled Components
-- Axios
-- React Toastify
-- Json Server
-
-## Participantes do projeto
-
-- Aluno 01
-- Aluno 02
-- Aluno 03
-
-## Responsaveis pelo desenvolvimento:
-
-### Aluno 01
-
-- Criou o componente de rotas
-- Foi responsável pelo CSS
-
-### Aluno 02
-
-- Criou a página de login
-- Criou o Componente de cabeçalho
-
-## Instruções de Instalação
-
-Clonar o projeto com o comando abaixo:
-
-```sh
-git clone https://github.com/roofranklin/casa-de-eventos-react.git
+1. Clone o repositório:
+```bash
+git clone https://github.com/fwtrodrigo/casa-de-eventos-react.git
 ```
-
-Entrar na pasta do projeto
-
-```sh
+  
+2. Entre na pasta do projeto:
+```bash
 cd casa-de-eventos-react
 ```
 
-Instalar as dependencias
-
-```sh
-npm install
+3. Construa a imagem Docker:
+```bash
+docker buildx build -t eventos .
 ```
 
-Instalar de maneira global o json-server (Caso você ainda não possua)
-
-```sh
-npm install -g json-server
+4. Execute o contêiner:
+```bash
+docker container run -d --name eventos -p 4173:4173 -p 3000:3000 eventos
 ```
 
-## Instruções para rodar o projeto
-
-Digitar o comando abaixo para rodar em desenvolvimento
-
-```sh
-npm run dev
+### Via Docker Hub
+1. Execute o contêiner:
+```bash
+docker container run -d --name eventos -p 4173:4173 -p 3000:3000 fwtrodrigo/eventos:1.0.0
 ```
 
-Digitar o comando abaixo para rodar o mock local
+## Acesso
 
-```sh
-json-server --watch eventos.json
-```
-
-### _Pronto! Seu projeto já estará rodando no endereço http://localhost:5173_
+1. Acesse a aplicação através do seguinte link:
+http://localhost:4173/
