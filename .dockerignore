@@ -1,0 +1,12 @@
+README.md
+.git
+.dockerignore
+.gitignore
+Dockerfile
+node_modules
+npm-debug.log
+build
+.vscode
+.idea
+jest.config.js
+.eslintrc.cjs
